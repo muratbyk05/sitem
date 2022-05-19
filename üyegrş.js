@@ -1,9 +1,10 @@
 function üye(){
-    let ad,yaş,cinsiyet,sonuc
+    let ad,yaş,cinsiyet,sonuc,şifre
 
     ad=document.getElementById("ad").value
     yaş=document.getElementById("yas").value
     cinsiyet=document.getElementById("cinsiyet").value
+    şifre=document.getElementById("Şifre").value
     sonuc=document.getElementById("sonuç")
      
     if(yaş>=18){
