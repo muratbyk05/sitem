@@ -1,4 +1,9 @@
-
+img{
+   
+    height: 15rem;
+    width: 15rem;
+    
+}
 body{
     display: flex;
     flex-direction: column;
@@ -6,21 +11,32 @@ body{
     align-items: center;
     min-height: 100vh;
     gap: 1rem;
-  background-color: sandybrown;
+   background-color: sandybrown;
 }
 
 #kapasayıcı{  
     display: grid;
-    gap: 4.4rem;
+    gap: 4rem;
     grid-template-areas: 
     "header article"
-    "footer aside";
+    "aside aside";
     border: thin solid rgb(46, 40, 40);
-    border-radius: 10px;
-    padding: 2.5rem 6rem 2.5rem 6rem;
+    padding: 2.5rem 6rem 3rem 6rem;
     background-color: rgb(199, 109, 109);
-   
+    animation: mybtn 2s infinite ;
     
+}
+
+@keyframes mybtn {
+    0%{border-radius: 5px;
+        padding: 10px,20px;
+    }
+    50%{border-radius: 30px;
+        padding: 5px,10px;
+    }
+    100%{border-radius: 5px;
+        padding: 10px,20px;
+    }
 }
 header{
  
@@ -32,9 +48,7 @@ header{
 article{
     grid-area: article;
 }
-footer{
-    grid-area: footer;
-}
+
 aside{
     grid-area: aside;
 }
