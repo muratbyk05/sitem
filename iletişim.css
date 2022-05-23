@@ -11,7 +11,7 @@ body{
     align-items: center;
     min-height: 100vh;
     gap: 1rem;
-   background-color: sandybrown;
+   background-color: rgb(132, 170, 106);
 }
 
 #kapasayıcı{  
@@ -28,14 +28,20 @@ body{
 }
 
 @keyframes mybtn {
-    0%{border-radius: 5px;
+    0%{
+        border-radius: 5px;
         padding: 10px,20px;
+        
     }
-    50%{border-radius: 30px;
+    50%{
+        border-radius: 40px;
         padding: 5px,10px;
+       
     }
-    100%{border-radius: 5px;
+    100%{
+        border-radius: 5px;
         padding: 10px,20px;
+       
     }
 }
 header{
